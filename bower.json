@@ -1,0 +1,7 @@
+{
+  "name": "Zardify",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1"
+  }
+}
