@@ -1,5 +1,5 @@
-@extends('layouts.base')
+@extends('layouts.homepage')
 
 @section('title')
-  Hey!
+  home
 @endsection
