@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -7925,7 +7926,7 @@ button.close {
 .logo-container .platform {
   background-image: url("../img/block.png");
   background-repeat: repeat-x;
-  min-height: 80px;
+  height: 80px;
   background-color: black;
 }
 
@@ -7946,4 +7947,18 @@ button.close {
 .thumbnail-homepage img {
   max-width: 200px;
   max-height: 200px;
+}
+
+.navbar {
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.scroll {
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  background-color: white;
+  border-bottom: solid 1px;
 }

@@ -14,23 +14,23 @@
     <![endif]-->
   </head>
 
-  <body ng-controller="homepageController">
+  <body>
 
     @include('partials.navbar')
 
     <div class="jumbotron banner">
-          <h1>zardify</h1>
-          <h3>music, technology and cool stuff</h3>
-          
-          <div class="logo-container">
-            <img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
-            <div class="platform"></div>
-          </div>
+      <div class="title">
+        <h1>zardify</h1>
+        <h3>music, technology and cool stuff</h3>
+      </div>
 
-
+      <div class="logo-container">
+        <img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
+        <div class="platform"></div>
+      </div>
     </div>
 
-    <div class="row">
+    <div class="row" ng-controller="homepagePostsController">
       <div class="col-md-3" ng-repeat="item in posts">
         <div class="thumbnail thumbnail-homepage">
           <div class="caption">
