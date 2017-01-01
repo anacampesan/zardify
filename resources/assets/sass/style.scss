@@ -24,15 +24,13 @@
 
 .thumbnail {
   border: none;
-  text-align: justify;
   .caption {
     text-align: center;
   }
   .description {
-    max-height: 150px;
-    white-space: nowrap;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+    max-height: 100px;
+    overflow: scroll;
+    text-align: justify;
   }
 }
 

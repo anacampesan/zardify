@@ -35,10 +35,16 @@
     <div class="row">
       <div class="col-md-3" ng-repeat="item in posts">
         <div class="thumbnail thumbnail-homepage">
-          <div class="caption"><h4>@{{ item.title }} <small>in @{{ item.category_id }}</small></h4></div>
+          <div class="caption">
+            <h4>
+              @{{ item.title }}
+              <br />
+              <small>in @{{ item.category }}</small>
+            </h4>
+          </div>
           <img src="img/posts/sample@{{ $index }}.jpg" alt=""><br>
           <p class="description">
-            @{{ item.body_en }}
+            @{{ text_wrap(item.body_en); }} <strong>Continue reading</strong>
           </p>
         </div>
       </div>
