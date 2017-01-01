@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/api/post', function (){
+  $posts = DB::table('posts')->limit(4)->get();
+  return $posts;
+});

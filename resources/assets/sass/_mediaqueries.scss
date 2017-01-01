@@ -1,0 +1,26 @@
+$media-query-size: 40px;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  @include media-query($media-query-size);
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  @include media-query($media-query-size * 1);
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  @include media-query($media-query-size * 0.8);
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  @include media-query($media-query-size * 0.25);
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  @include media-query($media-query-size * 0.25);
+}

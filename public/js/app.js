@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -452,6 +452,22 @@ c){var f=a|0,e=c;void 0===e&&(e=Math.min(b(a),3));Math.pow(10,e);return 1==f&&0=
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+var app = angular.module("zardify", []);
+app.controller('homepageController', function ($scope, $http){
+  $scope.test = "hue";
+  $scope.posts = [];
+  var url = "api/post";
+
+  $http.get(url).then(function (data){
+    $scope.posts = data.data;
+  })
+});
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 
@@ -476,6 +492,7 @@ c){var f=a|0,e=c;void 0===e&&(e=Math.min(b(a),3));Math.pow(10,e);return 1==f&&0=
 // });
 
 __webpack_require__ (0)
+__webpack_require__ (1)
 
 
 /***/ }

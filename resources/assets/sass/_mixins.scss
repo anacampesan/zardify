@@ -1,0 +1,6 @@
+@mixin media-query($margin) {
+  .row {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+}
