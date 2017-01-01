@@ -15,7 +15,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+// Public API
 Route::get('/api/post', function (){
-  $posts = DB::table('posts')->limit(4)->get();
+  $posts = DB::table('posts')
+              ->join('categories', 'posts.category_id', '=', 'categories.id')
+              ->join('users', 'posts.user_id', '=', 'users.id')
+              ->limit(4)
+              ->get();
   return $posts;
 });
