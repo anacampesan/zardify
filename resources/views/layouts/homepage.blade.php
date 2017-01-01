@@ -19,17 +19,15 @@
     @include('partials.navbar')
 
     <div class="jumbotron banner">
-      <div class="row">
-        <div class="col-md-4">
-          <h1></h1>
-        </div>
-        <div class="col-md-4">
-          <br /><img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
-        </div>
-        <div class="col-md-4">
-          <h4></h4>
-        </div>
-      </div>
+          <h1>zardify</h1>
+          <h3>music, technology and cool stuff</h3>
+          
+          <div class="logo-container">
+            <img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
+            <div class="platform"></div>
+          </div>
+
+
     </div>
 
     <div class="row">

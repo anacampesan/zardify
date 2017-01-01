@@ -465,7 +465,7 @@ app.controller('homepageController', function ($scope, $http){
   })
 
   $scope.text_wrap = function (str) {
-    return (str.substring(0, 200) + '...');
+    return (str.substring(0, 150) + '...');
   }
 });
 

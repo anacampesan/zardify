@@ -7910,9 +7910,23 @@ button.close {
 .banner {
   padding-top: 50px;
   min-height: 100vh;
-  background: #fff url("../img/banner.jpg") no-repeat fixed;
+  color: black;
+  background: #fff url("../img/mariobg.png") no-repeat fixed;
   background-size: cover;
   text-align: center;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo-container .platform {
+  background-image: url("../img/block.png");
+  background-repeat: repeat-x;
+  min-height: 80px;
+  background-color: black;
 }
 
 .thumbnail {
