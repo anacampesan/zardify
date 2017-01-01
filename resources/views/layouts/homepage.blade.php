@@ -44,7 +44,7 @@
           </div>
           <img src="img/posts/sample@{{ $index }}.jpg" alt=""><br>
           <p class="description">
-            @{{ item.body_en }}
+            @{{ text_wrap(item.body_en); }} <strong>Continue reading</strong>
           </p>
         </div>
       </div>

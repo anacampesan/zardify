@@ -7,4 +7,8 @@ app.controller('homepageController', function ($scope, $http){
   $http.get(url).then(function (data){
     $scope.posts = data.data;
   })
+
+  $scope.text_wrap = function (str) {
+    return (str.substring(0, 200) + '...');
+  }
 });

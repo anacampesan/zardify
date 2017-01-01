@@ -7917,7 +7917,6 @@ button.close {
 
 .thumbnail {
   border: none;
-  text-align: justify;
 }
 
 .thumbnail .caption {
@@ -7925,10 +7924,9 @@ button.close {
 }
 
 .thumbnail .description {
-  max-height: 150px;
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
+  max-height: 100px;
+  overflow: scroll;
+  text-align: justify;
 }
 
 .thumbnail-homepage img {
