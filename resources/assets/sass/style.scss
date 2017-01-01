@@ -1,4 +1,3 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
@@ -8,18 +7,19 @@
 // Bootstrap
 @import "resources/assets/bower/bootstrap/dist/css/bootstrap";
 
-@mixin vertical-align($percentage) {
-  position: relative;
-  top: $percentage;
-  transform: translateY(-50%);
-}
+// External functions
+@import "mixins";
 
-.jumbotron {
+// Device media queries
+@import "mediaqueries";
+
+.banner {
   padding-top: 50px;
-  height: 60vh;
-  background-image: url("../img/banner.jpg");
+  min-height: 100vh;
+  background: #fff url("../img/banner.jpg") no-repeat fixed;
+  background-size: cover;
   text-align: center;
-  .pixel-me { @include vertical-align(56%); }
+  // .pixel-me { @include vertical-align(56%); }
 }
 
 .thumbnail {
@@ -28,9 +28,17 @@
   .caption {
     text-align: center;
   }
+  .description {
+    max-height: 150px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.row {
-  margin-left: 20px;
-  margin-right: 20px;
+.thumbnail-homepage {
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }

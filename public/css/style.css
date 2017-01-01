@@ -7867,18 +7867,52 @@ button.close {
     display: none !important;
   }
 }
-.jumbotron {
-  padding-top: 50px;
-  height: 60vh;
-  background-image: url("../img/banner.jpg");
-  text-align: center;
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .row {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
-.jumbotron .pixel-me {
-  position: relative;
-  top: 56%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .row {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.banner {
+  padding-top: 50px;
+  min-height: 100vh;
+  background: #fff url("../img/banner.jpg") no-repeat fixed;
+  background-size: cover;
+  text-align: center;
 }
 
 .thumbnail {
@@ -7890,7 +7924,14 @@ button.close {
   text-align: center;
 }
 
-.row {
-  margin-left: 20px;
-  margin-right: 20px;
+.thumbnail .description {
+  max-height: 150px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumbnail-homepage img {
+  max-width: 200px;
+  max-height: 200px;
 }

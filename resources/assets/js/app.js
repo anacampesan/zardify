@@ -20,3 +20,4 @@
 // });
 
 require ('../bower/angular/angular.min')
+require ('./homepage')

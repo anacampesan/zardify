@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="zardify">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +13,33 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+
+  <body ng-controller="homepageController">
 
     @include('partials.navbar')
 
-    <div class="jumbotron">
-      <img class="pixel-me" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
+    <div class="jumbotron banner">
+      <div class="row">
+        <div class="col-md-4">
+          <h1></h1>
+        </div>
+        <div class="col-md-4">
+          <br /><img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">
+        </div>
+        <div class="col-md-4">
+          <h4></h4>
+        </div>
+      </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4" ng-repeat="n in ['Julian Casablancas', 'Trent Reznor', 'Mac Demarco']">
-          <div class="thumbnail">
-            <div class="caption"><h4>@{{ n }} <small>in Reviews</small></h4></div>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-
-
-          </div>
+    <div class="row">
+      <div class="col-md-3" ng-repeat="item in posts">
+        <div class="thumbnail thumbnail-homepage">
+          <div class="caption"><h4>@{{ item.title }} <small>in @{{ item.category_id }}</small></h4></div>
+          <img src="img/posts/sample@{{ $index }}.jpg" alt=""><br>
+          <p class="description">
+            @{{ item.body_en }}
+          </p>
         </div>
       </div>
     </div>
