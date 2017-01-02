@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu");
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -7908,6 +7909,23 @@ button.close {
   }
 }
 
+body {
+  font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #22a3e4;
+}
+
+.logo-title {
+  font-family: 'Press Start 2P';
+  color: #22a3e4 !important;
+}
+
+.logo-subtitle {
+  color: #636b6f;
+}
+
 .banner {
   padding-top: 50px;
   min-height: 100vh;
@@ -7954,6 +7972,10 @@ button.close {
   transition: background-color 0.3s ease;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+}
+
+.navbar a:hover {
+  color: #22a3e4 !important;
 }
 
 .scroll {

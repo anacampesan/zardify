@@ -1,5 +1,6 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu");
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 // Variables
@@ -14,6 +15,25 @@
 // Device media queries
 @import "mediaqueries";
 
+// General text
+body {
+  font-family: Ubuntu;
+}
+
+// Titles
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+}
+
+.logo-title {
+  font-family: 'Press Start 2P';
+  color: $title-color !important;
+}
+
+.logo-subtitle {
+  color: $text-color;
+}
+
 .banner {
   padding-top: 50px;
   min-height: 100vh;
@@ -21,10 +41,6 @@
   background: #fff url("../img/mariobg.png") no-repeat fixed;
   background-size: cover;
   text-align: center;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // flex-direction: column;
 }
 
 .logo-container {
@@ -62,9 +78,14 @@
   transition: background-color 0.3s ease;
   background-color: rgba(255, 255, 255, 0.0);
   border: none;
+  a:hover {
+    color: $title-color !important;
+  }
 }
+
 .scroll{
   transition: background-color 0.3s ease;
   background-color: white;
   border-bottom: solid 1px;
+  
 }

@@ -19,10 +19,8 @@
     @include('partials.navbar')
 
     <div class="jumbotron banner">
-      <div class="title">
-        <h1>zardify</h1>
-        <h3>music, technology and cool stuff</h3>
-      </div>
+      <h1 class="logo-title">ZARDIFY<small>.com</small></h1>
+      <h3 class="logo-subtitle">music, technology and cool stuff</h3>
 
       <div class="logo-container">
         <img class="pixel-logo" src="{{ secure_asset('img/ana.png') }}" alt="Pixel Art Self">

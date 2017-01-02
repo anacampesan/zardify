@@ -472,7 +472,7 @@ app.directive('navScroll', function($window){
   {
     angular.element($window).bind("scroll", function()
     {
-       if (this.pageYOffset >= 100) {
+       if (this.pageYOffset >= 10) {
            scope.changeClass = true;
        } else {
            scope.changeClass = false;
