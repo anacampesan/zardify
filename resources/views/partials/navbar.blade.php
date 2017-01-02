@@ -22,9 +22,6 @@
         <li>
           <a href="#"><span class="glyphicon glyphicon-flag" ></span> Random stuff</a>
         </li>
-        <li>
-          <a href="#"></a>
-        </li>
       </ul>
     </div>
   </div>
