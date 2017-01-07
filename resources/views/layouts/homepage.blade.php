@@ -46,6 +46,9 @@
       </div>
     </div>
 
+    <!--@ include('partials.footer')-->
+    <!--to be finished-->
+
     <script type="text/javascript" src="{{ secure_asset('js/app.js') }}"></script>
   </body>
 </html>
