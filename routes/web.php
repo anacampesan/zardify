@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('index');
 })->name('/');
 
+Route::get('/category', function (){
+  return view('category');
+})->name('/category');
+
+Route::get('/post', function (){
+  return view('post');
+})->name('/post');
+
+Route::get('/contact', function (){
+  return view('contact');
+})->name('/contact');
+
 // Public API
 Route::get('/api/post', function (){
   $posts = DB::table('posts')
