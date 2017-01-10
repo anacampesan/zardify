@@ -1,5 +1,7 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu");
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 // Variables
 @import "variables";
@@ -13,13 +15,44 @@
 // Device media queries
 @import "mediaqueries";
 
+// General text
+body {
+  font-family: Ubuntu;
+}
+
+// Titles
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+}
+
+.logo-title {
+  font-family: 'Press Start 2P';
+  color: $title-color !important;
+}
+
+.logo-subtitle {
+  color: $text-color;
+}
+
 .banner {
   padding-top: 50px;
   min-height: 100vh;
-  background: #fff url("../img/banner.jpg") no-repeat fixed;
+  color: black;
+  background: #fff url("../img/mariobg.png") no-repeat fixed;
   background-size: cover;
   text-align: center;
-  // .pixel-me { @include vertical-align(56%); }
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .platform {
+    background-image: url('../img/block.png');
+    background-repeat: repeat-x;
+    height: 80px;
+    background-color: black;
+  }
 }
 
 .thumbnail {
@@ -39,4 +72,28 @@
     max-width: 200px;
     max-height: 200px;
   }
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.0);
+  border: none;
+  a:hover {
+    color: $title-color !important;
+  }
+}
+
+.scroll{
+  transition: background-color 0.3s ease;
+  background-color: white;
+  border-bottom: solid 1px;
+}
+
+.footer {
+  height: 52px;
+  border-top: solid 1px;
+  bottom: 0px;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
 }
